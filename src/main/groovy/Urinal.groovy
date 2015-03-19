@@ -5,6 +5,10 @@ public class Urinal {
 
   boolean isAvailable() {
     if (status == UrinalStatus.OCCUPIED) return false
+
+    if (null != leftNeighbor && !leftNeighbor.isAvailable()) return false
+
+    if (null != rightNeighbor && !rightNeighbor.isAvailable()) return false
     true
   }
 
