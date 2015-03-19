@@ -28,4 +28,26 @@ public class UrinalSpec extends Specification {
     then: "expect Urinal to be unavailable when occupied"
     urinal.isAvailable() == false
   }
+
+  def "urinal can have an empty left neighbor"() {
+    given: "instantiated Urinal"
+    def urinal = new Urinal()
+
+    when: "status is occupied"
+    urinal.leftNeighbor = null
+
+    then: "urinal has no left neighbor"
+    urinal.hasLeftNeighbor() == false
+  }
+
+  def "urinal has a left neighbor"() {
+    given: "instantiated Urinal"
+    def urinal = new Urinal()
+
+    when: "status is occupied"
+    urinal.leftNeighbor = new Urinal()
+
+    then: "urinal has left neighbor"
+    urinal.hasLeftNeighbor() == true
+  }
 }
