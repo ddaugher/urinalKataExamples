@@ -50,4 +50,26 @@ public class UrinalSpec extends Specification {
     then: "urinal has left neighbor"
     urinal.hasLeftNeighbor() == true
   }
+
+  def "urinal can have an empty right neighbor"() {
+    given: "instantiated Urinal"
+    def urinal = new Urinal()
+
+    when: "status is occupied"
+    urinal.rightNeighbor = null
+
+    then: "urinal has no right neighbor"
+    urinal.hasRightNeighbor() == false
+  }
+
+  def "urinal has a right neighbor"() {
+    given: "instantiated Urinal"
+    def urinal = new Urinal()
+
+    when: "status is occupied"
+    urinal.rightNeighbor = new Urinal()
+
+    then: "urinal has right neighbor"
+    urinal.hasRightNeighbor() == true
+  }
 }
