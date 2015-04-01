@@ -75,6 +75,16 @@ public class BathroomSpec extends Specification {
     bathroom.nextAvailable() == null
   }
 
+  def "should return urinal position 1 when only one urinal exists and is available"() {
+    given: "instantiated Urinal"
+    def bathroom = new Bathroom(1)
+
+    expect: "position 1 urinal is available"
+    bathroom.numberOfUrinals == 1
+    bathroom.nextAvailable() == bathroom.urinals.get(0)
+    1 == bathroom.urinals.head().position
+  }
+
   def "should return urinal position 0 when only one urinal exists and is occupied"() {
     given: "instantiated Urinal"
     def bathroom = new Bathroom(1)
@@ -83,16 +93,6 @@ public class BathroomSpec extends Specification {
     expect: "position 1 urinal is occupied"
     bathroom.numberOfUrinals == 1
     bathroom.nextAvailable() == null
-  }
-
-  def "should return position 1 urinal when only one available urinal exists"() {
-    given: "instantiated Urinal"
-    def bathroom = new Bathroom(1)
-
-    expect: "position 1 urinal is available"
-    bathroom.numberOfUrinals == 1
-    bathroom.nextAvailable() == bathroom.urinals.get(0)
-    1 == bathroom.urinals.head().position
   }
 
   def "should return position 1 urinal when two available urinals exist"() {
