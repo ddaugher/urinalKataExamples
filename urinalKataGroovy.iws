@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc7ad1ba-01ec-4add-9fac-e96626691772" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/Bathroom.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/Bathroom.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/BathroomSpec.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/BathroomSpec.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/Urinal.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/Urinal.groovy" />
     </list>
     <ignored path="urinalKataGroovy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,8 +66,18 @@
       <file leaf-file-name="Bathroom.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/groovy/Bathroom.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="603" max-vertical-offset="1224">
-              <caret line="61" column="58" selection-start-line="61" selection-start-column="58" selection-end-line="61" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="603" max-vertical-offset="1258">
+              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BathroomSpec.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/groovy/BathroomSpec.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.82808024" vertical-offset="1564" max-vertical-offset="2363">
+              <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,17 +87,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/groovy/Urinal.groovy">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BathroomSpec.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/groovy/BathroomSpec.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5358166" vertical-offset="1037" max-vertical-offset="2363">
-              <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+              <caret line="11" column="79" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -96,16 +98,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="2465">
               <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UrinalStatusSpec.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/groovy/UrinalStatusSpec.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="527">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -331,8 +323,8 @@
         <option value="$PROJECT_DIR$/src/test/UrinalKataSpec.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/UrinalStatus.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/UrinalStatusSpec.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/Urinal.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/UrinalSpec.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/Urinal.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/Bathroom.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/BathroomSpec.groovy" />
       </list>
@@ -540,15 +532,90 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BathroomSpec.should return urinal position 1 when only one urinal exists and is available">
-    <configuration default="false" name="BathroomSpec.should return position 1 urinal when only one available urinal exists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BathroomSpec.should return position 1 urinal when two urinals exists and position 2 is occupied">
+    <configuration default="false" name="BathroomSpec.should return urinal position 1 when only one urinal exists and is available" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" runner="idea" />
       <module name="urinalKataGroovy" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BathroomSpec" />
-      <option name="METHOD_NAME" value="should return position 1 urinal when only one available urinal exists" />
+      <option name="METHOD_NAME" value="should return urinal position 1 when only one urinal exists and is available" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BathroomSpec.should return urinal position 2 when two urinals exist and both are available" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea" />
+      <module name="urinalKataGroovy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BathroomSpec" />
+      <option name="METHOD_NAME" value="should return urinal position 2 when two urinals exist and both are available" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BathroomSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea" />
+      <module name="urinalKataGroovy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BathroomSpec" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BathroomSpec.should return position 2 urinal when two urinals exists and position 1 is occupied" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea" />
+      <module name="urinalKataGroovy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BathroomSpec" />
+      <option name="METHOD_NAME" value="should return position 2 urinal when two urinals exists and position 1 is occupied" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -572,81 +639,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BathroomSpec" />
       <option name="METHOD_NAME" value="should return position 1 urinal when two urinals exists and position 2 is occupied" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="BathroomSpec.should return urinal position 0 when only one urinal exists and is occupied" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" runner="idea" />
-      <module name="urinalKataGroovy" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BathroomSpec" />
-      <option name="METHOD_NAME" value="should return urinal position 0 when only one urinal exists and is occupied" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="BathroomSpec.should return urinal position 0 when no urinals exist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" runner="idea" />
-      <module name="urinalKataGroovy" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BathroomSpec" />
-      <option name="METHOD_NAME" value="should return urinal position 0 when no urinals exist" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="BathroomSpec.should return urinal position 1 when only one urinal exists and is available" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" runner="idea" />
-      <module name="urinalKataGroovy" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BathroomSpec" />
-      <option name="METHOD_NAME" value="should return urinal position 1 when only one urinal exists and is available" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -749,19 +741,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.BathroomSpec.should return position 1 urinal when only one available urinal exists" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BathroomSpec.should return position 1 urinal when two urinals exists and position 2 is occupied" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BathroomSpec.should return urinal position 0 when only one urinal exists and is occupied" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BathroomSpec.should return urinal position 0 when no urinals exist" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BathroomSpec.should return urinal position 1 when only one urinal exists and is available" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.BathroomSpec.should return urinal position 1 when only one urinal exists and is available" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BathroomSpec.should return urinal position 2 when two urinals exist and both are available" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BathroomSpec" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BathroomSpec.should return position 2 urinal when two urinals exists and position 1 is occupied" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BathroomSpec.should return position 1 urinal when two urinals exists and position 2 is occupied" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BathroomSpec.should return urinal position 1 when only one urinal exists and is available" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BathroomSpec.should return urinal position 0 when only one urinal exists and is occupied" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BathroomSpec.should return urinal position 0 when no urinals exist" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BathroomSpec.should return position 1 urinal when only one available urinal exists" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BathroomSpec.should return position 1 urinal when two urinals exists and position 2 is occupied" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BathroomSpec.should return position 1 urinal when two urinals exists and position 2 is occupied" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BathroomSpec.should return position 2 urinal when two urinals exists and position 1 is occupied" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BathroomSpec" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BathroomSpec.should return urinal position 2 when two urinals exist and both are available" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BathroomSpec.should return urinal position 1 when only one urinal exists and is available" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -791,12 +783,12 @@
       <updated>1426729326820</updated>
       <workItem from="1426729327335" duration="12028000" />
       <workItem from="1427929561284" duration="625000" />
-      <workItem from="1427930274463" duration="1523000" />
+      <workItem from="1427930274463" duration="2501000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14176000" />
+    <option name="totallyTimeSpent" value="15154000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1173" extended-state="6" />
@@ -847,10 +839,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/groovy/Bathroom.groovy</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="21" />
+      <option name="time" value="25" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -938,13 +938,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.spockframework/spock-core/0.7-groovy-2.0/source/19f1e62a5094604766f83e55a693b9cdac3b271a/spock-core-0.7-groovy-2.0-sources.jar!/org/spockframework/util/ReflectionUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72624797" vertical-offset="1657" max-vertical-offset="2278">
-          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/groovy/UrinalStatusSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
@@ -961,26 +954,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.spockframework/spock-core/0.7-groovy-2.0/source/19f1e62a5094604766f83e55a693b9cdac3b271a/spock-core-0.7-groovy-2.0-sources.jar!/org/spockframework/util/ReflectionUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72624797" vertical-offset="1657" max-vertical-offset="2278">
+          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/Urinal.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <caret line="11" column="79" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/Bathroom.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="603" max-vertical-offset="1224">
-          <caret line="61" column="58" selection-start-line="61" selection-start-column="58" selection-end-line="61" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="603" max-vertical-offset="1258">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/groovy/BathroomSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5358166" vertical-offset="1037" max-vertical-offset="2363">
-          <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.82808024" vertical-offset="1564" max-vertical-offset="2363">
+          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
           <folding />
         </state>
       </provider>

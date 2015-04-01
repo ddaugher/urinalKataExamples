@@ -7,9 +7,9 @@ public class Urinal {
   boolean isAvailable() {
     if (status == UrinalStatus.OCCUPIED) return false
 
-    if (null != leftNeighbor && !leftNeighbor.isAvailable()) return false
+    if (null != leftNeighbor && !leftNeighbor.status == UrinalStatus.AVAILABLE) return false
 
-    if (null != rightNeighbor && !rightNeighbor.isAvailable()) return false
+    if (null != rightNeighbor && !rightNeighbor.status == UrinalStatus.AVAILABLE) return false
     true
   }
 

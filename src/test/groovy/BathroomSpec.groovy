@@ -75,17 +75,7 @@ public class BathroomSpec extends Specification {
     bathroom.nextAvailable() == null
   }
 
-  def "should return urinal position 1 when only one urinal exists and is available"() {
-    given: "instantiated Urinal"
-    def bathroom = new Bathroom(1)
-
-    expect: "position 1 urinal is available"
-    bathroom.numberOfUrinals == 1
-    bathroom.nextAvailable() == bathroom.urinals.get(0)
-    1 == bathroom.urinals.head().position
-  }
-
-  def "should return urinal position 0 when only one urinal exists and is occupied"() {
+  def "should return urinal position 0 when only 1 urinal exists and is occupied"() {
     given: "instantiated Urinal"
     def bathroom = new Bathroom(1)
     bathroom.urinals.head().status = UrinalStatus.OCCUPIED
@@ -95,14 +85,24 @@ public class BathroomSpec extends Specification {
     bathroom.nextAvailable() == null
   }
 
-  def "should return position 1 urinal when two available urinals exist"() {
+  def "should return urinal position 1 when only 1 urinal exists and is available"() {
+    given: "instantiated Urinal"
+    def bathroom = new Bathroom(1)
+
+    expect: "position 1 urinal is available"
+    bathroom.numberOfUrinals == 1
+    bathroom.nextAvailable() == bathroom.urinals.get(0)
+    1 == bathroom.urinals.head().position
+  }
+
+  def "should return urinal position 2 when two urinals exist and both are available"() {
     given: "instantiated Urinal"
     def bathroom = new Bathroom(2)
 
-    expect: "position 1 urinal should be available urinal"
+    expect: "position 2 should be returned"
     bathroom.numberOfUrinals == 2
-    bathroom.nextAvailable() == bathroom.urinals.get(0)
-    1 == bathroom.urinals.get(0).position
+    bathroom.nextAvailable() == bathroom.urinals.get(1)
+    2 == bathroom.urinals.get(1).position
   }
 
   def "should return position 2 urinal when two urinals exists and position 1 is occupied"() {
@@ -112,7 +112,7 @@ public class BathroomSpec extends Specification {
     when: "position 1 is occupied"
     bathroom.urinals.get(0).status = UrinalStatus.OCCUPIED
 
-    then: "position 2 urinal should be available urinal"
+    then: "position 2 should be returned"
     bathroom.numberOfUrinals == 2
     bathroom.nextAvailable() == bathroom.urinals.get(1)
     2 == bathroom.urinals.get(1).position
@@ -125,7 +125,7 @@ public class BathroomSpec extends Specification {
     when: "position 2 is occupied"
     bathroom.urinals.get(1).status = UrinalStatus.OCCUPIED
 
-    then: "position 1 urinal should be available urinal"
+    then: "position 1 should be returned"
     bathroom.numberOfUrinals == 2
     bathroom.nextAvailable() == bathroom.urinals.get(0)
     1 == bathroom.urinals.get(0).position
