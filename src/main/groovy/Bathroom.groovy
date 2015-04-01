@@ -57,7 +57,7 @@ public class Bathroom {
   def nextAvailable() {
     if (urinals.isEmpty()) return null
 
-    if (urinals.find {it.isAvailable()}?.size() == 0) return null
+    if (urinals.findAll().findAll {it.isAvailable()}.size() == 0) return null
 
     if (urinals.get(0).isAvailable()) return urinals.get(0)
 
