@@ -5,6 +5,7 @@ public class Bathroom {
 
   Bathroom(int numberOfUrinals) {
 
+    if (0 == numberOfUrinals) return
     if (1 == numberOfUrinals) {
       createSingleUrinal(1)
     } else {
@@ -54,7 +55,12 @@ public class Bathroom {
   }
 
   def nextAvailable() {
+    if (urinals.isEmpty()) return null
+
+    if (urinals.find {it.isAvailable()}?.size() == 0) return null
+
     if (urinals.get(0).isAvailable()) return urinals.get(0)
+
     urinals.get(1)
   }
 }

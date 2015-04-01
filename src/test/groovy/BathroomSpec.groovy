@@ -66,6 +66,25 @@ public class BathroomSpec extends Specification {
     urinals.get(3).rightNeighbor == null
   }
 
+  def "should return urinal position 0 when no urinals exist"() {
+    given: "instantiated Urinal"
+    def bathroom = new Bathroom(0)
+
+    expect: "no available urinals"
+    bathroom.numberOfUrinals == 0
+    bathroom.nextAvailable() == null
+  }
+
+  def "should return urinal position 0 when only one urinal exists and is occupied"() {
+    given: "instantiated Urinal"
+    def bathroom = new Bathroom(1)
+    bathroom.urinals.head().status = UrinalStatus.OCCUPIED
+
+    expect: "position 1 urinal is occupied"
+    bathroom.numberOfUrinals == 1
+    bathroom.nextAvailable() == null
+  }
+
   def "should return position 1 urinal when only one available urinal exists"() {
     given: "instantiated Urinal"
     def bathroom = new Bathroom(1)
