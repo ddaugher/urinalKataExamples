@@ -18,6 +18,16 @@ public class UrinalSpec extends Specification {
     urinal.isAvailable() == true
   }
 
+  def "urinal should return properly assigned position when requested"() {
+    given: "instantiated Urinal"
+    def urinal = new Urinal()
+    urinal.position = 1
+
+    expect: "position to be 1"
+    urinal.position == 1
+
+  }
+
   def "urinal should be unavailable when status is occupied"() {
     given: "instantiated Urinal"
     def urinal = new Urinal()
@@ -73,7 +83,7 @@ public class UrinalSpec extends Specification {
     urinal.hasRightNeighbor() == true
   }
 
-  def "an available urinal, with an occupied left and right neighbor should be not considered available"() {
+  def "an available urinal, with an occupied left and right neighbor should be considered occupied"() {
     given: "instantiated Urinal"
     def urinal = new Urinal()
     urinal.status = UrinalStatus.AVAILABLE
@@ -92,7 +102,7 @@ public class UrinalSpec extends Specification {
     urinal.isAvailable() == false
   }
 
-  def "an available urinal, with an non-existent left and occupied right neighbor should be not considered available"() {
+  def "an available urinal, with an non-existent left and occupied right neighbor should be considered occupied"() {
     given: "instantiated Urinal"
     def urinal = new Urinal()
     urinal.status = UrinalStatus.AVAILABLE
@@ -109,7 +119,7 @@ public class UrinalSpec extends Specification {
     urinal.isAvailable() == false
   }
 
-  def "an available urinal, with an non-existent right and occupied left neighbor should be not considered available"() {
+  def "an available urinal, with an non-existent right and occupied left neighbor should be considered occupied"() {
     given: "instantiated Urinal"
     def urinal = new Urinal()
     urinal.status = UrinalStatus.AVAILABLE

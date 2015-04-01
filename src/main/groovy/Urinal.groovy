@@ -2,6 +2,7 @@ public class Urinal {
   UrinalStatus status = UrinalStatus.AVAILABLE
   Urinal leftNeighbor
   Urinal rightNeighbor
+  int position
 
   boolean isAvailable() {
     if (status == UrinalStatus.OCCUPIED) return false
