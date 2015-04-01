@@ -73,7 +73,7 @@ public class BathroomSpec extends Specification {
     expect: "position 1 urinal is available"
     bathroom.numberOfUrinals == 1
     bathroom.nextAvailable() == bathroom.urinals.get(0)
-    1 == bathroom.urinals.get(0).position
+    1 == bathroom.urinals.head().position
   }
 
   def "should return position 1 urinal when two available urinals exist"() {
