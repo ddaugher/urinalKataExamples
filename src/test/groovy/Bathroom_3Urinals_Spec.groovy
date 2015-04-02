@@ -33,4 +33,15 @@ public class Bathroom_3Urinals_Spec extends Specification {
     bathroom.nextAvailable() == bathroom.urinals.get(2)
     3 == bathroom.urinals.get(2).position
   }
+
+  def "should return urinal position 3 when three urinals exists and position 1 is occupied"() {
+    given: "instantiated Urinal"
+    def bathroom = new Bathroom(3)
+    bathroom.urinals.get(0).status = UrinalStatus.OCCUPIED
+
+    expect: "position 3 should be returned"
+    bathroom.numberOfUrinals == 3
+    bathroom.nextAvailable() == bathroom.urinals.get(2)
+    3 == bathroom.urinals.get(2).position
+  }
 }
