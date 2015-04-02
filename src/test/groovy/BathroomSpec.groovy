@@ -130,4 +130,20 @@ public class BathroomSpec extends Specification {
     bathroom.nextAvailable() == bathroom.urinals.get(0)
     1 == bathroom.urinals.get(0).position
   }
+
+  def "should return urinal position 0 when two urinals exists and both positions are occupied"() {
+    given: "instantiated Urinal"
+    def bathroom = new Bathroom(2)
+
+    when: "position 1 is occupied"
+    bathroom.urinals.get(0).status = UrinalStatus.OCCUPIED
+
+    and: "position 2 is occupied"
+    bathroom.urinals.get(1).status = UrinalStatus.OCCUPIED
+
+    then: "no available urinals"
+    bathroom.numberOfUrinals == 2
+    bathroom.nextAvailable() == null
+  }
+
 }
