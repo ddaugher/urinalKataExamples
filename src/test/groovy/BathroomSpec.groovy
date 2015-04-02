@@ -10,6 +10,14 @@ public class BathroomSpec extends Specification {
     bathroom.numberOfUrinals() == 0
   }
 
+  def "Bathroom should return proper urinal by position"() {
+    given: "instantiated Bathroom"
+    def bathroom = new Bathroom(2)
+
+    expect: "empty list of urinals"
+    bathroom.getUrinalByPosition(2) == bathroom.urinals.get(1)
+  }
+
   def "Bathroom should create proper number of urinals"() {
     given: "instantiated Urinal"
     def bathroom = new Bathroom(1)
@@ -26,10 +34,10 @@ public class BathroomSpec extends Specification {
     bathroom.numberOfUrinals() == 2
 
     def urinals = bathroom.urinals
-    urinals.get(0).leftNeighbor == null
-    urinals.get(0).rightNeighbor == urinals.get(1)
-    urinals.get(1).leftNeighbor == urinals.get(0)
-    urinals.get(1).rightNeighbor == null
+    bathroom.getUrinalByPosition(1).leftNeighbor == null
+    bathroom.getUrinalByPosition(1).rightNeighbor == bathroom.getUrinalByPosition(2)
+    bathroom.getUrinalByPosition(2).leftNeighbor == bathroom.getUrinalByPosition(1)
+    bathroom.getUrinalByPosition(2).rightNeighbor == null
   }
 
   def "Bathroom should create three urinals and proper neighbor relationships"() {
@@ -91,7 +99,7 @@ public class BathroomSpec extends Specification {
 
     expect: "position 1 urinal is available"
     bathroom.numberOfUrinals() == 1
-    bathroom.nextAvailable() == bathroom.urinals.get(0)
+    bathroom.nextAvailable() == bathroom.getUrinalByPosition(1)
     1 == bathroom.urinals.head().position
   }
 
@@ -101,8 +109,8 @@ public class BathroomSpec extends Specification {
 
     expect: "position 2 should be returned"
     bathroom.numberOfUrinals() == 2
-    bathroom.nextAvailable() == bathroom.urinals.get(1)
-    2 == bathroom.urinals.get(1).position
+    bathroom.nextAvailable() == bathroom.getUrinalByPosition(2)
+    2 == bathroom.getUrinalByPosition(2).position
   }
 
   def "should return position 2 urinal when two urinals exists and position 1 is occupied"() {
@@ -123,12 +131,12 @@ public class BathroomSpec extends Specification {
     def bathroom = new Bathroom(2)
 
     when: "position 2 is occupied"
-    bathroom.urinals.get(1).status = UrinalStatus.OCCUPIED
+    bathroom.getUrinalByPosition(2).status = UrinalStatus.OCCUPIED
 
     then: "position 1 should be returned"
     bathroom.numberOfUrinals() == 2
     bathroom.nextAvailable() == bathroom.urinals.get(0)
-    1 == bathroom.urinals.get(0).position
+    1 == bathroom.getUrinalByPosition(1).position
   }
 
   def "should return urinal position 0 when two urinals exists and both positions are occupied"() {
@@ -136,10 +144,10 @@ public class BathroomSpec extends Specification {
     def bathroom = new Bathroom(2)
 
     when: "position 1 is occupied"
-    bathroom.urinals.get(0).status = UrinalStatus.OCCUPIED
+    bathroom.getUrinalByPosition(1).status = UrinalStatus.OCCUPIED
 
     and: "position 2 is occupied"
-    bathroom.urinals.get(1).status = UrinalStatus.OCCUPIED
+    bathroom.getUrinalByPosition(2).status = UrinalStatus.OCCUPIED
 
     then: "no available urinals"
     bathroom.numberOfUrinals() == 2

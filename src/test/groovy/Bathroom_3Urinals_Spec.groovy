@@ -72,8 +72,14 @@ public class Bathroom_3Urinals_Spec extends Specification {
   def "should return urinal position 0 when three urinals exists and all positions are occupied"() {
     given: "instantiated Urinal"
     def bathroom = new Bathroom(3)
+
+    and: "position 1 is occupied"
     bathroom.urinals.get(0).status = UrinalStatus.OCCUPIED
+
+    and: "position 2 is occupied"
     bathroom.urinals.get(1).status = UrinalStatus.OCCUPIED
+
+    and: "position 3 is occupied"
     bathroom.urinals.get(2).status = UrinalStatus.OCCUPIED
 
     expect: "no available urinals"

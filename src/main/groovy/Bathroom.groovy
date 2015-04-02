@@ -19,10 +19,10 @@ public class Bathroom {
   }
 
   private def createMultiUrinalFacility(int numberOfUrinals) {
-    return (1..numberOfUrinals).each { index ->
-      if (index == 1) createFirstUrinal()
-      if (index > 1 && index < numberOfUrinals) createMiddleUrinal(index)
-      if (index == numberOfUrinals) createLastUrinal(index)
+    return (1..numberOfUrinals).each { position ->
+      if (position == 1) createFirstUrinal()
+      if (position > 1 && position < numberOfUrinals) createMiddleUrinal(position)
+      if (position == numberOfUrinals) createLastUrinal(position)
     }
   }
 
@@ -43,22 +43,22 @@ public class Bathroom {
     urinals.add(u.rightNeighbor)
   }
 
-  private createMiddleUrinal(int index) {
-    Urinal u = urinals.get(index - 1)
-    u.position = index
-    u.leftNeighbor = getLeftNeighbor(index)
+  private createMiddleUrinal(int position) {
+    Urinal u = getUrinalByPosition(position)
+    u.position = position
+    u.leftNeighbor = getLeftNeighbor(position)
     u.rightNeighbor = new Urinal()
     urinals.add(u.rightNeighbor)
   }
 
-  private Object getLeftNeighbor(int index) {
-    return urinals.get(index - 2)
+  private def getLeftNeighbor(int position) {
+    return getUrinalByPosition(position - 1)
   }
 
-  private createLastUrinal(int index) {
-    Urinal u = urinals.get(index - 1)
-    u.position = index
-    u.leftNeighbor = getLeftNeighbor(index)
+  private createLastUrinal(int position) {
+    Urinal u = getUrinalByPosition(position)
+    u.position = position
+    u.leftNeighbor = getLeftNeighbor(position)
     u.rightNeighbor = null
   }
 
@@ -94,5 +94,9 @@ public class Bathroom {
 
   private def urinalExistsWithoutNeighbor() {
     null == getUrinalWithNoNeighbor() ? false : true
+  }
+
+  def getUrinalByPosition(int position) {
+    urinals.get(position - 1)
   }
 }
