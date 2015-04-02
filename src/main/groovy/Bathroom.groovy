@@ -61,8 +61,5 @@ public class Bathroom {
     if (available.size() == 0) return null
 
     available.last()
-   // if (urinals.get(0).isAvailable()) return urinals.get(0)
-
-    //urinals.get(1)
   }
 }

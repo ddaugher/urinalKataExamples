@@ -145,5 +145,4 @@ public class BathroomSpec extends Specification {
     bathroom.numberOfUrinals == 2
     bathroom.nextAvailable() == null
   }
-
 }
