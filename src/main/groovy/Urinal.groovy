@@ -5,16 +5,31 @@ public class Urinal {
   int position
 
   boolean isAvailable() {
-    if (status == UrinalStatus.OCCUPIED) return false
+    if (isOccupied(this)) return false
 
-    if (null == leftNeighbor && isUrinalAvailable()) return true
+    if (isFirstPositionUrinal()) return true
 
-    if (null == rightNeighbor && isUrinalAvailable()) return true
+    if (isLastPositionUrinal()) return true
 
-    if (hasLeftNeighbor() && leftNeighbor.status != UrinalStatus.AVAILABLE) return false
+    if (isMiddlePositionUrinal()) return false
 
-    if (hasRightNeighbor() && rightNeighbor.status != UrinalStatus.AVAILABLE) return false
     true
+  }
+
+  private boolean isMiddlePositionUrinal() {
+    return (hasLeftNeighbor() && isOccupied(leftNeighbor)) || (hasRightNeighbor() && isOccupied(rightNeighbor))
+  }
+
+  private boolean isLastPositionUrinal() {
+    return null == rightNeighbor && isUrinalAvailable()
+  }
+
+  private boolean isFirstPositionUrinal() {
+    return null == leftNeighbor && isUrinalAvailable()
+  }
+
+  private boolean isOccupied(urinal) {
+    return urinal.status != UrinalStatus.AVAILABLE
   }
 
   boolean hasLeftNeighbor() {
@@ -27,7 +42,7 @@ public class Urinal {
     false
   }
 
-  boolean isUrinalAvailable() {
+  private boolean isUrinalAvailable() {
     status == UrinalStatus.AVAILABLE
   }
 }
