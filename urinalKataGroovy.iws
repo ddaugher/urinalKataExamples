@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc7ad1ba-01ec-4add-9fac-e96626691772" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/groovy/Bathroom_4Urinals_Spec.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/Urinal.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/Urinal.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/UrinalSpec.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/UrinalSpec.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urinalKataGroovy.iws" afterPath="$PROJECT_DIR$/urinalKataGroovy.iws" />
     </list>
     <ignored path="urinalKataGroovy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,21 +91,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Urinal.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Urinal.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/groovy/Urinal.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2679083" vertical-offset="0" max-vertical-offset="698">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
               <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UrinalSpec.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="UrinalSpec.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/groovy/UrinalSpec.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2261" max-vertical-offset="3043">
-              <caret line="156" column="16" selection-start-line="156" selection-start-column="16" selection-end-line="156" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.56160456" vertical-offset="1410" max-vertical-offset="2465">
+              <caret line="106" column="28" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -338,8 +335,8 @@
         <option value="$PROJECT_DIR$/src/main/groovy/Bathroom.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/Bathroom_3Urinals_Spec.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/Bathroom_4Urinals_Spec.groovy" />
-        <option value="$PROJECT_DIR$/src/test/groovy/UrinalSpec.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/Urinal.groovy" />
+        <option value="$PROJECT_DIR$/src/test/groovy/UrinalSpec.groovy" />
       </list>
     </option>
   </component>
@@ -545,7 +542,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UrinalSpec.an available urinal, in last position, with an occupied left and non-existent right neighbor should be considered available">
+  <component name="RunManager" selected="JUnit.All in urinalKataGroovy">
     <configuration default="false" name="All in urinalKataGroovy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" runner="idea" />
       <module name="urinalKataGroovy" />
@@ -762,9 +759,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UrinalSpec.an available urinal, in last position, with an occupied left and non-existent right neighbor should be considered available" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.UrinalSpec.an available urinal, in first position, with an non-existent left neighbor and occupied right neighbor should be considered available" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.All in urinalKataGroovy" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in urinalKataGroovy" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UrinalSpec.an available urinal, in last position, with an occupied left and non-existent right neighbor should be considered available" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UrinalSpec.an available urinal, in first position, with an non-existent left neighbor and occupied right neighbor should be considered available" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.UrinalSpec" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.UrinalSpec.an available urinal, in position 1, with an non-existent left and occupied right neighbor should be considered available" />
       </list>
@@ -796,12 +793,12 @@
       <updated>1426729326820</updated>
       <workItem from="1426729327335" duration="12028000" />
       <workItem from="1427929561284" duration="625000" />
-      <workItem from="1427930274463" duration="6253000" />
+      <workItem from="1427930274463" duration="6341000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18906000" />
+    <option name="totallyTimeSpent" value="18994000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1173" extended-state="6" />
@@ -991,18 +988,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/UrinalSpec.groovy">
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/Urinal.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2261" max-vertical-offset="3043">
-          <caret line="156" column="16" selection-start-line="156" selection-start-column="16" selection-end-line="156" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/Urinal.groovy">
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/UrinalSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2679083" vertical-offset="0" max-vertical-offset="698">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.56160456" vertical-offset="1410" max-vertical-offset="2465">
+          <caret line="106" column="28" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
           <folding />
         </state>
       </provider>
