@@ -7,13 +7,13 @@ public class Urinal {
   boolean isAvailable() {
     if (status == UrinalStatus.OCCUPIED) return false
 
-    if (null == leftNeighbor && status == UrinalStatus.AVAILABLE) return true
+    if (null == leftNeighbor && isUrinalAvailable()) return true
 
-    if (null == rightNeighbor && status == UrinalStatus.AVAILABLE) return true
+    if (null == rightNeighbor && isUrinalAvailable()) return true
 
-    if (null != leftNeighbor && leftNeighbor.status != UrinalStatus.AVAILABLE) return false
+    if (hasLeftNeighbor() && leftNeighbor.status != UrinalStatus.AVAILABLE) return false
 
-    if (null != rightNeighbor && rightNeighbor.status != UrinalStatus.AVAILABLE) return false
+    if (hasRightNeighbor() && rightNeighbor.status != UrinalStatus.AVAILABLE) return false
     true
   }
 
@@ -25,5 +25,9 @@ public class Urinal {
   boolean hasRightNeighbor() {
     if (null != rightNeighbor) return true
     false
+  }
+
+  boolean isUrinalAvailable() {
+    status == UrinalStatus.AVAILABLE
   }
 }

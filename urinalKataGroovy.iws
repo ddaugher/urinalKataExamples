@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc7ad1ba-01ec-4add-9fac-e96626691772" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/groovy/Bathroom_5Urinals_Spec.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/Bathroom_4Urinals_Spec.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/Bathroom_4Urinals_Spec.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urinalKataGroovy.iws" afterPath="$PROJECT_DIR$/urinalKataGroovy.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/Urinal.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/Urinal.groovy" />
     </list>
     <ignored path="urinalKataGroovy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,51 +61,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Bathroom.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/Bathroom.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="628" max-vertical-offset="1326">
-              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bathroom_3Urinals_Spec.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/groovy/Bathroom_3Urinals_Spec.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
-              <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bathroom_4Urinals_Spec.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/groovy/Bathroom_4Urinals_Spec.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bathroom_5Urinals_Spec.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/groovy/Bathroom_5Urinals_Spec.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BathroomSpec.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BathroomSpec.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/groovy/BathroomSpec.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5859599" vertical-offset="1852" max-vertical-offset="2618">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1852" max-vertical-offset="2618">
               <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Urinal.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/groovy/Urinal.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2679083" vertical-offset="0" max-vertical-offset="698">
+              <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UrinalSpec.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/groovy/UrinalSpec.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1666" max-vertical-offset="2465">
+              <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -336,10 +314,10 @@
         <option value="$PROJECT_DIR$/src/test/groovy/BathroomSpec.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/Bathroom.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/Bathroom_3Urinals_Spec.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/Urinal.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/UrinalSpec.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/Bathroom_5Urinals_Spec.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/Bathroom_4Urinals_Spec.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/Urinal.groovy" />
       </list>
     </option>
   </component>
@@ -545,30 +523,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Bathroom_4Urinals_Spec">
-    <configuration default="false" name="Bathroom_5Urinals_Spec.should return urinal position 1 when five urinals exists and 2, 4 and 5 are occupied" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" runner="idea" />
-      <module name="urinalKataGroovy" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Bathroom_5Urinals_Spec" />
-      <option name="METHOD_NAME" value="should return urinal position 1 when five urinals exists and 2, 4 and 5 are occupied" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.UrinalSpec">
     <configuration default="false" name="Bathroom_4Urinals_Spec.should return urinal position 4 when four urinals exists and all are available" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" runner="idea" />
       <module name="urinalKataGroovy" />
@@ -673,6 +628,29 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="UrinalSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea" />
+      <module name="urinalKataGroovy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UrinalSpec" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <module name="" />
       <setting name="vmparams" value="" />
@@ -760,19 +738,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.Bathroom_5Urinals_Spec.should return urinal position 1 when five urinals exists and 2, 4 and 5 are occupied" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.Bathroom_4Urinals_Spec.should return urinal position 4 when four urinals exists and all are available" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Bathroom_4Urinals_Spec.should return urinal position 1 when four urinals exists and 2, 3 and 4 are occupied" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Bathroom_4Urinals_Spec.should return urinal position 1 when four urinals exists and 2, and 4 are occupied" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Bathroom_4Urinals_Spec" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.Bathroom_4Urinals_Spec.should return urinal position 4 when four urinals exists and all are available" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Bathroom_4Urinals_Spec.should return urinal position 1 when four urinals exists and 2, 3 and 4 are occupied" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Bathroom_4Urinals_Spec.should return urinal position 1 when four urinals exists and 2, and 4 are occupied" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Bathroom_4Urinals_Spec" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.UrinalSpec" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Bathroom_4Urinals_Spec" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Bathroom_4Urinals_Spec.should return urinal position 1 when four urinals exists and 2, and 4 are occupied" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Bathroom_4Urinals_Spec.should return urinal position 1 when four urinals exists and 2, 3 and 4 are occupied" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.Bathroom_4Urinals_Spec.should return urinal position 4 when four urinals exists and all are available" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.Bathroom_5Urinals_Spec.should return urinal position 1 when five urinals exists and 2, 4 and 5 are occupied" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UrinalSpec" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Bathroom_4Urinals_Spec" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Bathroom_4Urinals_Spec.should return urinal position 1 when four urinals exists and 2, and 4 are occupied" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Bathroom_4Urinals_Spec.should return urinal position 1 when four urinals exists and 2, 3 and 4 are occupied" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Bathroom_4Urinals_Spec.should return urinal position 4 when four urinals exists and all are available" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -802,16 +780,16 @@
       <updated>1426729326820</updated>
       <workItem from="1426729327335" duration="12028000" />
       <workItem from="1427929561284" duration="625000" />
-      <workItem from="1427930274463" duration="7387000" />
+      <workItem from="1427930274463" duration="7675000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20040000" />
+    <option name="totallyTimeSpent" value="20328000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1173" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -829,8 +807,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32839963" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32839963" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -965,33 +943,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/Bathroom.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="628" max-vertical-offset="1326">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/UrinalSpec.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7063037" vertical-offset="1309" max-vertical-offset="2465">
-          <caret line="106" column="28" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/Urinal.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2679083" vertical-offset="0" max-vertical-offset="698">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/groovy/Bathroom_3Urinals_Spec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="244" max-vertical-offset="1513">
+        <state vertical-scroll-proportion="0.60888255" vertical-offset="0" max-vertical-offset="1513">
           <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
           <folding />
         </state>
@@ -999,7 +953,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/groovy/Bathroom_5Urinals_Spec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+        <state vertical-scroll-proportion="0.5845272" vertical-offset="0" max-vertical-offset="698">
           <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
           <folding />
         </state>
@@ -1007,16 +961,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/groovy/Bathroom_4Urinals_Spec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+        <state vertical-scroll-proportion="0.63323784" vertical-offset="0" max-vertical-offset="765">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/Bathroom.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6103152" vertical-offset="628" max-vertical-offset="1326">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/groovy/BathroomSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5859599" vertical-offset="1852" max-vertical-offset="2618">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1852" max-vertical-offset="2618">
           <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/UrinalSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1666" max-vertical-offset="2465">
+          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/Urinal.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2679083" vertical-offset="0" max-vertical-offset="698">
+          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
           <folding />
         </state>
       </provider>
