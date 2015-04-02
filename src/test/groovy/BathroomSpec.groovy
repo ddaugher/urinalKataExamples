@@ -7,7 +7,7 @@ public class BathroomSpec extends Specification {
     def bathroom = new Bathroom()
 
     expect: "empty list of urinals"
-    bathroom.numberOfUrinals == 0
+    bathroom.numberOfUrinals() == 0
   }
 
   def "Bathroom should create proper number of urinals"() {
@@ -15,7 +15,7 @@ public class BathroomSpec extends Specification {
     def bathroom = new Bathroom(1)
 
     expect: "1 urinal in the bathroom"
-    bathroom.numberOfUrinals == 1
+    bathroom.numberOfUrinals() == 1
   }
 
   def "Bathroom should create two urinals and proper neighbor relationships"() {
@@ -23,7 +23,7 @@ public class BathroomSpec extends Specification {
     def bathroom = new Bathroom(2)
 
     expect: "2 urinal in the bathroom and linked properly"
-    bathroom.numberOfUrinals == 2
+    bathroom.numberOfUrinals() == 2
 
     def urinals = bathroom.urinals
     urinals.get(0).leftNeighbor == null
@@ -37,7 +37,7 @@ public class BathroomSpec extends Specification {
     def bathroom = new Bathroom(3)
 
     expect: "3 urinal in the bathroom and linked properly"
-    bathroom.numberOfUrinals == 3
+    bathroom.numberOfUrinals() == 3
 
     def urinals = bathroom.urinals
     urinals.get(0).leftNeighbor == null
@@ -53,7 +53,7 @@ public class BathroomSpec extends Specification {
     def bathroom = new Bathroom(4)
 
     expect: "4 urinal in the bathroom and linked properly"
-    bathroom.numberOfUrinals == 4
+    bathroom.numberOfUrinals() == 4
 
     def urinals = bathroom.urinals
     urinals.get(0).leftNeighbor == null
@@ -71,7 +71,7 @@ public class BathroomSpec extends Specification {
     def bathroom = new Bathroom(0)
 
     expect: "no available urinals"
-    bathroom.numberOfUrinals == 0
+    bathroom.numberOfUrinals() == 0
     bathroom.nextAvailable() == null
   }
 
@@ -81,7 +81,7 @@ public class BathroomSpec extends Specification {
     bathroom.urinals.head().status = UrinalStatus.OCCUPIED
 
     expect: "position 1 urinal is occupied"
-    bathroom.numberOfUrinals == 1
+    bathroom.numberOfUrinals() == 1
     bathroom.nextAvailable() == null
   }
 
@@ -90,7 +90,7 @@ public class BathroomSpec extends Specification {
     def bathroom = new Bathroom(1)
 
     expect: "position 1 urinal is available"
-    bathroom.numberOfUrinals == 1
+    bathroom.numberOfUrinals() == 1
     bathroom.nextAvailable() == bathroom.urinals.get(0)
     1 == bathroom.urinals.head().position
   }
@@ -100,7 +100,7 @@ public class BathroomSpec extends Specification {
     def bathroom = new Bathroom(2)
 
     expect: "position 2 should be returned"
-    bathroom.numberOfUrinals == 2
+    bathroom.numberOfUrinals() == 2
     bathroom.nextAvailable() == bathroom.urinals.get(1)
     2 == bathroom.urinals.get(1).position
   }
@@ -113,7 +113,7 @@ public class BathroomSpec extends Specification {
     bathroom.urinals.get(0).status = UrinalStatus.OCCUPIED
 
     then: "position 2 should be returned"
-    bathroom.numberOfUrinals == 2
+    bathroom.numberOfUrinals() == 2
     bathroom.nextAvailable() == bathroom.urinals.get(1)
     2 == bathroom.urinals.get(1).position
   }
@@ -126,7 +126,7 @@ public class BathroomSpec extends Specification {
     bathroom.urinals.get(1).status = UrinalStatus.OCCUPIED
 
     then: "position 1 should be returned"
-    bathroom.numberOfUrinals == 2
+    bathroom.numberOfUrinals() == 2
     bathroom.nextAvailable() == bathroom.urinals.get(0)
     1 == bathroom.urinals.get(0).position
   }
@@ -142,7 +142,7 @@ public class BathroomSpec extends Specification {
     bathroom.urinals.get(1).status = UrinalStatus.OCCUPIED
 
     then: "no available urinals"
-    bathroom.numberOfUrinals == 2
+    bathroom.numberOfUrinals() == 2
     bathroom.nextAvailable() == null
   }
 }

@@ -70,25 +70,29 @@ public class Bathroom {
     urinals.add(u)
   }
 
-  int getNumberOfUrinals() {
+  int numberOfUrinals() {
     urinals.size()
   }
 
   def nextAvailable() {
     if (urinals.isEmpty()) return null
 
-    def availableWithoutNeighbors = gatherAvailableWithoutNeighbors()
-
-    availableWithoutNeighbors.size() > 0 ? availableWithoutNeighbors.last() : availableWithNeighbors()
+    urinalExistsWithoutNeighbor() ? getUrinalWithNoNeighbor() : getUrinalWithNeighbor()
 
   }
 
-  private def availableWithNeighbors() {
+  private def getUrinalWithNeighbor() {
     def available = urinals.findAll().findAll { it.status == UrinalStatus.AVAILABLE }
     available.isEmpty() ? null : available.last()
   }
 
-  private def gatherAvailableWithoutNeighbors() {
-    return urinals.findAll().findAll { it.isAvailable() }
+  private def getUrinalWithNoNeighbor() {
+    def available = urinals.findAll().findAll { it.isAvailable() }
+    available.isEmpty() ? null : available.last()
+
+  }
+
+  private def urinalExistsWithoutNeighbor() {
+    null == getUrinalWithNoNeighbor() ? false : true
   }
 }

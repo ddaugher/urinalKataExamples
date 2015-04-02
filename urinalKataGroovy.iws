@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bc7ad1ba-01ec-4add-9fac-e96626691772" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/Bathroom.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/Bathroom.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/BathroomSpec.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/BathroomSpec.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/Bathroom_3Urinals_Spec.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/Bathroom_3Urinals_Spec.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/Bathroom_4Urinals_Spec.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/Bathroom_4Urinals_Spec.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/Bathroom_5Urinals_Spec.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/Bathroom_5Urinals_Spec.groovy" />
     </list>
     <ignored path="urinalKataGroovy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,8 +68,8 @@
       <file leaf-file-name="Bathroom.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/groovy/Bathroom.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.512894" vertical-offset="1002" max-vertical-offset="1700">
-              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.97421205" vertical-offset="323" max-vertical-offset="1768">
+              <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -784,12 +788,12 @@
       <updated>1426729326820</updated>
       <workItem from="1426729327335" duration="12028000" />
       <workItem from="1427929561284" duration="625000" />
-      <workItem from="1427930274463" duration="10397000" />
+      <workItem from="1427930274463" duration="11121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23050000" />
+    <option name="totallyTimeSpent" value="23774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1173" extended-state="6" />
@@ -997,8 +1001,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/Bathroom.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.512894" vertical-offset="1002" max-vertical-offset="1700">
-          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.97421205" vertical-offset="323" max-vertical-offset="1768">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
           <folding />
         </state>
       </provider>

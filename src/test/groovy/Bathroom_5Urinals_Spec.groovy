@@ -10,7 +10,7 @@ public class Bathroom_5Urinals_Spec extends Specification {
     bathroom.urinals.get(4).status = UrinalStatus.OCCUPIED
 
     expect: "position 1 should be returned"
-    bathroom.numberOfUrinals == 5
+    bathroom.numberOfUrinals() == 5
     bathroom.nextAvailable() == bathroom.urinals.get(0)
     1 == bathroom.urinals.get(0).position
   }
@@ -23,7 +23,7 @@ public class Bathroom_5Urinals_Spec extends Specification {
     bathroom.urinals.get(4).status = UrinalStatus.OCCUPIED
 
     expect: "position 1 should be returned"
-    bathroom.numberOfUrinals == 5
+    bathroom.numberOfUrinals() == 5
     bathroom.nextAvailable() == bathroom.urinals.get(0)
     1 == bathroom.urinals.get(0).position
   }

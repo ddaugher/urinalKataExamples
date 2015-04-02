@@ -7,7 +7,7 @@ public class Bathroom_4Urinals_Spec extends Specification {
     def bathroom = new Bathroom(4)
 
     expect: "position 1 should be returned"
-    bathroom.numberOfUrinals == 4
+    bathroom.numberOfUrinals() == 4
     bathroom.nextAvailable() == bathroom.urinals.get(3)
     4 == bathroom.urinals.get(3).position
   }
@@ -20,7 +20,7 @@ public class Bathroom_4Urinals_Spec extends Specification {
     bathroom.urinals.get(3).status = UrinalStatus.OCCUPIED
 
     expect: "position 1 should be returned"
-    bathroom.numberOfUrinals == 4
+    bathroom.numberOfUrinals() == 4
     bathroom.nextAvailable() == bathroom.urinals.get(0)
     1 == bathroom.urinals.get(0).position
   }
@@ -32,7 +32,7 @@ public class Bathroom_4Urinals_Spec extends Specification {
     bathroom.urinals.get(3).status = UrinalStatus.OCCUPIED
 
     expect: "position 1 should be returned"
-    bathroom.numberOfUrinals == 4
+    bathroom.numberOfUrinals() == 4
     bathroom.nextAvailable() == bathroom.urinals.get(0)
     1 == bathroom.urinals.get(0).position
   }
