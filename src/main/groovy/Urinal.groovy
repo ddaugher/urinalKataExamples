@@ -7,24 +7,24 @@ public class Urinal {
   boolean isAvailable() {
     if (isOccupied(this)) return false
 
-    if (isFirstPositionUrinal()) return true
+    if (isFirstPositionAndAvailable()) return true
 
-    if (isLastPositionUrinal()) return true
+    if (isLastPositionAndAvailable()) return true
 
-    if (isMiddlePositionUrinal()) return false
+    if (isMiddlePositionAndAvailable()) return false
 
     true
   }
 
-  private boolean isMiddlePositionUrinal() {
+  private boolean isMiddlePositionAndAvailable() {
     return (hasLeftNeighbor() && isOccupied(leftNeighbor)) || (hasRightNeighbor() && isOccupied(rightNeighbor))
   }
 
-  private boolean isLastPositionUrinal() {
+  private boolean isLastPositionAndAvailable() {
     return null == rightNeighbor && isUrinalAvailable()
   }
 
-  private boolean isFirstPositionUrinal() {
+  private boolean isFirstPositionAndAvailable() {
     return null == leftNeighbor && isUrinalAvailable()
   }
 
