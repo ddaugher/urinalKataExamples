@@ -58,7 +58,14 @@ public class Bathroom {
     if (urinals.isEmpty()) return null
 
     def available = urinals.findAll().findAll {it.isAvailable()}
-    if (available.size() == 0) return null
+    if (available.size() == 0) {
+      def a = urinals.findAll().findAll {it.status == UrinalStatus.AVAILABLE}
+      if (!a.isEmpty()) {
+        return a.last()
+      } else {
+        return null
+      }
+    }
 
     available.last()
   }
