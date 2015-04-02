@@ -1,21 +1,37 @@
 public class Bathroom {
   def urinals = []
 
-  Bathroom() {}
+  Bathroom() {
+    new Bathroom(0)
+  }
 
   Bathroom(int numberOfUrinals) {
 
-    if (0 == numberOfUrinals) return
-    if (1 == numberOfUrinals) {
-      createSingleUrinal(1)
-    } else {
-      (1..numberOfUrinals).each { it ->
-        if (it == 1) createLeftUrinal()
-        if (it > 1 && it < numberOfUrinals) createMiddleUrinal(it)
-        if (it == numberOfUrinals) createRightUrinal(it)
-      }
+    if (isEmptyBathroom(numberOfUrinals)) return
+
+    if (isSingleStallFacility(numberOfUrinals)) {
+      createSingleUrinal()
+      return
     }
 
+    createMultiUrinalFacility(numberOfUrinals)
+
+  }
+
+  private def createMultiUrinalFacility(int numberOfUrinals) {
+    return (1..numberOfUrinals).each { it ->
+      if (it == 1) createLeftUrinal()
+      if (it > 1 && it < numberOfUrinals) createMiddleUrinal(it)
+      if (it == numberOfUrinals) createRightUrinal(it)
+    }
+  }
+
+  private boolean isSingleStallFacility(int numberOfUrinals) {
+    return 1 == numberOfUrinals
+  }
+
+  private boolean isEmptyBathroom(int numberOfUrinals) {
+    return 0 == numberOfUrinals
   }
 
   private createRightUrinal(int it) {
@@ -42,9 +58,9 @@ public class Bathroom {
     urinals.add(u.rightNeighbor)
   }
 
-  private createSingleUrinal(int position) {
+  private createSingleUrinal() {
     def u = new Urinal()
-    u.position = position
+    u.position = 1
     u.leftNeighbor = null
     u.rightNeighbor = null
     urinals.add(u)
