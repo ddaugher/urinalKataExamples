@@ -16,7 +16,4 @@ public enum UrinalStatus {
     values().find { it.value == v }
   }
 
-  static List asList() {
-    values().collect { it.value }
-  }
 }
