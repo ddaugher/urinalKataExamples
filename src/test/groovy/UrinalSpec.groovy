@@ -136,4 +136,38 @@ public class UrinalSpec extends Specification {
     urinal.isAvailable() == false
   }
 
+  def "an available urinal, in first position, with an non-existent left neighbor and occupied right neighbor should be considered available"() {
+    given: "instantiated Urinal"
+    def urinal = new Urinal()
+    urinal.status = UrinalStatus.AVAILABLE
+
+    when: "left neighbor does not exist"
+    urinal.leftNeighbor = null
+
+    and: "right neighbor is occupied"
+    def right = new Urinal()
+    right.status = UrinalStatus.OCCUPIED
+    urinal.rightNeighbor = right
+
+    then: "urinal is considered available"
+    urinal.isAvailable() == true
+  }
+
+  def "an available urinal, in last position, with an occupied left and non-existent right neighbor should be considered available"() {
+    given: "instantiated Urinal"
+    def urinal = new Urinal()
+    urinal.status = UrinalStatus.AVAILABLE
+
+    when: "right neighbor does not exist"
+    urinal.rightNeighbor = null
+
+    and: "left neighbor is occupied"
+    def left = new Urinal()
+    left.status = UrinalStatus.OCCUPIED
+    urinal.leftNeighbor = left
+
+    then: "urinal is considered available"
+    urinal.isAvailable() == true
+  }
+
 }
