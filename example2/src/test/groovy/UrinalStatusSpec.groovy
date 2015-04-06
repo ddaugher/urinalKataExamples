@@ -8,4 +8,19 @@ public class UrinalStatusSpec extends Specification {
     UrinalStatus.OCCUPIED == "OCCUPIED" as UrinalStatus
   }
 
+  def "should return correct value"() {
+    UrinalStatus.AVAILABLE.value() == "Available"
+    UrinalStatus.OCCUPIED.value() == "Occupied"
+  }
+
+  def "should return correct enum when retrieving by string"() {
+    UrinalStatus.AVAILABLE.toString() == "Available"
+    UrinalStatus.OCCUPIED.toString() == "Occupied"
+  }
+
+  def "should return correct enumw when retrieved by value"() {
+    UrinalStatus.AVAILABLE == UrinalStatus.byValue("Available")
+    UrinalStatus.OCCUPIED == UrinalStatus.byValue("Occupied")
+  }
+
 }
