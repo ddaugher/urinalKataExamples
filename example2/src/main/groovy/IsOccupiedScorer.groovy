@@ -1,6 +1,6 @@
 class IsOccupiedScorer implements I_Scorer {
   @Override
-  def int score(List<ScoredUrinal> urinals) {
-    urinals*.score = 0
+  def void score(List<ScoredUrinal> urinals) {
+    urinals.findAll {it.status == UrinalStatus.OCCUPIED}.each {it.score = 0}
   }
 }

@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd8cf6f4-eb6c-4282-93c4-22b1a2ae16f1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/groovy/IsOccupiedScorer.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/groovy/IsOccupiedScorerSpec.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/I_Scorer.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/I_Scorer.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../example1/urinalKataGroovy.iws" afterPath="$PROJECT_DIR$/../example1/urinalKataGroovy.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/IsOccupiedScorer.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/IsOccupiedScorer.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/IsOccupiedScorerSpec.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/IsOccupiedScorerSpec.groovy" />
     </list>
     <ignored path="example2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,31 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IsOccupiedScorer.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="IsOccupiedScorer.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/groovy/IsOccupiedScorer.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.08279221" vertical-offset="0" max-vertical-offset="616">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+              <caret line="3" column="74" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="I_Scorer.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/I_Scorer.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
-              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IsOccupiedScorerSpec.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="IsOccupiedScorerSpec.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/groovy/IsOccupiedScorerSpec.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.055194806" vertical-offset="0" max-vertical-offset="616">
+              <caret line="2" column="32" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -302,8 +290,8 @@
         <option value="$PROJECT_DIR$/src/main/groovy/ScoredUrinal.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/IsOccuppiedScorer.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/I_Scorer.groovy" />
-        <option value="$PROJECT_DIR$/src/test/groovy/IsOccupiedScorerSpec.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/IsOccupiedScorer.groovy" />
+        <option value="$PROJECT_DIR$/src/test/groovy/IsOccupiedScorerSpec.groovy" />
       </list>
     </option>
   </component>
@@ -626,12 +614,12 @@
       <created>1428359423928</created>
       <updated>1428359423928</updated>
       <workItem from="1428359424564" duration="757000" />
-      <workItem from="1428360332485" duration="2070000" />
+      <workItem from="1428360332485" duration="2439000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2827000" />
+    <option name="totallyTimeSpent" value="3196000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1053" extended-state="0" />
@@ -725,24 +713,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/I_Scorer.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
+        <state vertical-scroll-proportion="0.027597403" vertical-offset="0" max-vertical-offset="616">
           <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/IsOccupiedScorerSpec.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/IsOccupiedScorer.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08279221" vertical-offset="0" max-vertical-offset="616">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+          <caret line="3" column="74" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/IsOccupiedScorerSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.055194806" vertical-offset="0" max-vertical-offset="616">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="33" />
           <folding />
         </state>
       </provider>
