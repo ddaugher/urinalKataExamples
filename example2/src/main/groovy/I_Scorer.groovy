@@ -1,3 +1,3 @@
 public interface I_Scorer {
-  def void Score(List<ScoredUrinal> urinals);
+  def int score(List<ScoredUrinal> urinals);
 }
